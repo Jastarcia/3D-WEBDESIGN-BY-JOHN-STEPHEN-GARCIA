@@ -1,0 +1,61 @@
+ 
+ * 
+ {
+     margin: 0;
+     padding: 0;
+ }
+div div iframe {
+    border-style: solid;
+    border-radius: 30px;
+    margin-top: 4vh;
+    width: 1280px;
+    height: 620px;
+    border-color: solid;
+}
+
+@media screen and (max-width: 200px) {
+    div div iframe 
+        width: 200px;
+        height: 130px;
+    
+}
+
+div div iframe:hover {
+    border-color: rgb(255, 0, 0);
+    border-radius: 0px;
+}
+
+div div {
+    background-color: rgb(255, 0, 0);
+        border-style: solid;
+            border-radius: 30px;
+            width: 1320px;
+            height: 690px;
+            border-color: solid;
+            margin-top: 50px;
+            margin-bottom: 50px;
+}
+
+div div:hover
+{
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+}
+
+div div iframe:hover {
+    border-color: #000000;
+}
+
+div {
+    text-align: center;
+}
+
+.end {
+    padding-bottom: 2vh;
+}
+
+iframe {
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+
+}
+

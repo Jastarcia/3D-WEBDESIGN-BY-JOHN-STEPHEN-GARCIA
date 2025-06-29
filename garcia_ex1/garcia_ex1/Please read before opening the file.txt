@@ -1,0 +1,7 @@
+Please check if you are on 80% resolution on each page
+The recommended resolution is %80
+The recommended browser is google
+
+note: if you have a low memory capacity you might experience 
+a slow responsive page, therefore please wait for the resources
+to load untill complete, thankyou!.

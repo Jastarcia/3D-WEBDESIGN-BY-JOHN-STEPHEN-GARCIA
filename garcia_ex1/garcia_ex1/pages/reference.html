@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./2style.css" />
+  <title>Reference</title>
+</head>
+
+<body>
+  <header>
+    <a href="https://goo.gl/maps/c1mCgvabNSVRzLAw7" target="_blank"> <img src="png/athens.png" height="100" width="100"
+        id="athens"></a>
+    <ul>
+      <li><a href="../garcia_ex1.html">Home</a></li>
+      <li><a href="../pages/introduction.html">Introduction</a></li>
+      <li><a href="../pages/discussion.html">Discussion</a></li>
+      <li><a href="../pages/reference.html">Reference</a></li>
+    </ul>
+  </header>
+  <section>
+    <video 
+    src="png/flag2.mp4" id="flag2" autoplay loop muted>
+    </video>
+    <img src="png/olympus.png" id="olympus">
+    <img src="png/mountain.png" id="mountain">
+    <a href="../pages/greece.html" id="btn">GREECE</a>
+    <img src="png/ruins.png" id="ruins">
+  </section>
+
+
+  <div class="sec" id="sec">
+
+    <h2><center> References </center></h2>
+
+    <head>
+      <style>
+        .justify {
+          text-align: justify;
+          text-justify: inter-word;
+        }
+      </style>
+    </head>
+    
+    <body>
+        <center>
+      <div>
+          
+        <p class="justify">Morris, I., & Powell, B. (2019). The Greeks: History, Culture, and Society (3rd ed.). Pearson.
+        https://www.amazon.com/Greeks-History-Culture-Society-3rd/dp/0134730745</p>
+    
+        <p class="justify">Davies, J. K. (2009). The Ancient Greeks (2nd ed.). Harvard University Press.
+        https://www.amazon.com/Ancient-Greeks-J-K-Davies/dp/1934386381</p>
+    
+        <p class="justify">Thucydides. (1874). The Peloponnesian War (R. Crawley, Trans.). Project Gutenberg. https://www.gutenberg.org/ebooks/7142
+        </p>
+        <p class="justify">Herodotus. (c. 430 BCE). The Histories (A. D. Godley, Trans.). Harvard University Press.
+        https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126</p>
+    
+        <p class="justify">Hornblower, S. (2002). The Greek world, 479-323 BC. Routledge. https://books.google.com/books?id=pIvBXfzGbgYC</p>
+    
+        <p class="justify">Herodotus. (1972). The Histories (A. de Selincourt, Trans.). Penguin Classics.
+        https://www.amazon.com/Histories-Penguin-Classics-Herodotus/dp/0140449086</p>
+    
+        <p class="justify">Aristotle. (1891). The Athenian Constitution (F. G. Kenyon, Trans.). Perseus Digital Library.
+        https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0002%3Achapter%3D1</p>
+
+        <p class="justify">Fine, J. V. A. (1983). The ancient Greeks: A critical history. Harvard University Press.
+        https://books.google.com/books?id=lXVYQgAACAAJ1</p>
+    
+      </div>
+    </body>
+      <div class="iframediv">
+        ​ <iframe src="https://www.youtube.com/embed/gFRxmi4uCGo" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+        <h4>Ancient Greece - Arzamas</h4>
+        <br>
+        <br>
+      </div>
+      <div class="iframediv">
+        <iframe src="https://www.youtube.com/embed/6bDrYTXQLu8" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+        <h4>Ancient Greece 101 - Nationa Geographic </h4>
+        <br>
+        <br>
+      </div>
+      <div class="iframediv">
+        <iframe src="https://www.youtube.com/embed/mQ94xbXnYu4" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+        <h4 class="end">History of the olympics</h4>
+        <br>
+        <br>
+      </div>
+      <div class="iframediv">
+        <iframe src="https://www.youtube.com/embed/3du8R9Id6f4" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+        <h4 class="end"> How did Greece begin - Captivating History </h4>
+      </div>
+      <br>
+      <br>
+      <div class="iframediv">
+        <iframe src="https://www.youtube.com/embed/WNLQb3QOuR8" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+        <h4 class="end">National Geographic Honours Greeks - National Geographic</h4>
+      </div>
+    </div>
+    </div>
+    </center>
+  </body>
+
+
+  <script>
+    let flag2 = document.getElementById('flag2');
+    let olympus = document.getElementById('olympus');
+    let mountain = document.getElementById('mountain');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let ruins = document.getElementById('ruins');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      flag2.style.left = value * 0.25 + 'px';
+      olympus.style.top = value * 1.05 + 'px';
+      mountain.style.top = value * 0.5 + 'px';
+      ruins.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+      athens.style.top.left = value * 1.5 + 'px';
+    })
+  </script>
+    
+</body>
+
+<div>
+<a href="https://lifepacific.libguides.com/c.php?g=196863&p=2712052" target="_blank">
+  Greek History Reference. retrieved(2023)
+</a>
+<a href="https://www.thoughtco.com/timeline-of-ancient-greece-118597" target="_blank">
+  Greek Empire Reference. retrieved(2023)
+</a>
+<a href="https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/a/greek-culture" target="_blank">
+  Greek Culture Reference. retrieved(2023)
+</a>
+</div>
+
+</html>

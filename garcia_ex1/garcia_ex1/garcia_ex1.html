@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>ATHENS GREECE</title>
+</head>
+
+<body>
+  <header>
+    <a href="https://goo.gl/maps/c1mCgvabNSVRzLAw7" target="_blank"> <img src="png/athens.png" height="100" width="100"
+        id="athens"></a>
+    <ul>
+      <li><a href="garcia_ex1.html">Home</a></li>
+      <li><a href="pages/introduction.html">Introduction</a></li>
+      <li><a href="pages/discussion.html">Discussion</a></li>
+      <li><a href="pages/reference.html">Reference</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="png/stars.png" id="stars">
+    <img src="png/olympus.png" id="olympus">
+    <img src="png/mountain.png" id="mountain">
+    <a href="pages/greece.html" id="btn">GREECE</a>
+    <img src="png/sparta.png" id="sparta">
+  </section>
+  <div class="sec" id="sec">
+
+    <h3><center> "Life is no good without competition" </center></h3>
+
+    <h2><center>Ancient Inventions</center></h2>
+    
+
+<head>
+  <title>Justified Paragraph in a Div</title>
+  <style>
+    .justify {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="justify">Ancient Greek civilization made numerous significant inventions and discoveries that still have an impact on our lives
+    today.</p>
+
+    <p class="justify">1. Democracy: Ancient Greeks created the concept of democracy, which is still used as the basis of many modern government
+    systems worldwide.</p>
+
+    <p class="justify">2. Mathematics: Ancient Greeks made important contributions to mathematics, including the concept of geometry, which is
+    still used in a variety of fields such as architecture, engineering, and physics.</p>
+
+    <p class="justify">3. Philosophy: Greek philosophers such as Plato and Aristotle developed ideas that continue to influence philosophy,
+    politics, and ethics today.</p>
+
+    <p class="justify">4. DOlympic Games: The ancient Greeks invented the Olympic Games, which have been revived in the modern era and continue to
+    be a major international sporting event.</p>
+
+    <p class="justify">5. Medicine: Hippocrates, a Greek physician, is considered the father of modern medicine. His ideas and methods are still
+    used in the medical field today.</p>
+    
+    <p class="justify">6. Theater: The ancient Greeks developed the concept of theater, which still influences modern theater and performance art.</p>
+
+    <p class="justify">7. Astronomy: Greek astronomers made important discoveries about the movement of the planets and stars, which formed the
+    basis of modern astronomy.</p>
+
+    <p class="justify">8. Architecture: The Greeks developed architectural concepts such as the column and the arch, which continue to be used in
+    building design today.</p>
+
+    <p class="justify">9. Literature: Greek literature, such as Homer's epic poems The Iliad and The Odyssey, are still read and studied today and
+    continue to influence modern literature.</p>
+
+    <p class="justify">10. Philosophy of science: Greek philosophers developed the concept of natural philosophy, which laid the foundation for
+    modern scientific inquiry.</p>
+
+  </div>
+</body>
+      
+  </div>
+  <script>
+    let stars = document.getElementById('stars');
+    let olympus = document.getElementById('olympus');
+    let mountain = document.getElementById('mountain');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let sparta = document.getElementById('sparta');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      olympus.style.top = value * 1.05 + 'px';
+      mountain.style.top = value * 0.5 + 'px';
+      sparta.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+      athens.style.top.left = value * 1.5 + 'px';
+    })
+  </script>
+</body>
+
+</html>

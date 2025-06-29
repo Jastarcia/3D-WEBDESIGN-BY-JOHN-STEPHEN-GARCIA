@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ATHENS GREECE</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://goo.gl/maps/c1mCgvabNSVRzLAw7" target="_blank"> <img src="png/athens.png" height="100"
+                width="100" id="athens"></a>
+        <ul>
+            <li><a href="../garcia_ex1.html">Home</a></li>
+            <li><a href="../pages/introduction.html">Introduction</a></li>
+            <li><a href="../pages/discussion.html">Discussion</a></li>
+            <li><a href="../pages/reference.html">Reference</a></li>
+        </ul>
+    </header>
+    <section>
+        <video 
+        src="png/flag.mp4" id="flag" autoplay loop muted >
+        </video>
+        <img src="png/olympus.png" id="olympus">
+        <img src="png/mountain.png" id="mountain">
+        <a href="../pages/greece.html" id="btn">GREECE</a>
+        <img src="png/hercules.png" id="hercules">
+    </section>
+    <div class="sec" id="sec">
+        <h2> Greek Literature </h2>
+        <head>
+            <title>Justified Paragraph in a Div</title>
+            <style>
+                .justify {
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <div>
+                <p class="justify">Greece has a rich history and culture that has produced many famous essays and philosophical works.</p>
+        
+                <p class="justify">1. The Republic by Plato: This is a famous work of political philosophy in which Plato describes an ideal society.</p>
+        
+                <p class="justify">2. The Nicomachean Ethics by Aristotle: This work discusses the nature of happiness and how to achieve it.</p>
+        
+                <p class="justify">3. Meditations by Marcus Aurelius: This is a series of personal writings by the Roman Emperor Marcus Aurelius that explore
+                Stoic philosophy.</p>
+        
+                <p class="justify">4. The Iliad and The Odyssey by Homer: These epic poems are considered two of the greatest works in Western literature.</p>
+        
+                <p class="justify">5. The Symposium by Plato: This work is a philosophical dialogue that discusses the nature of love and beauty.</p>
+        
+                <p class="justify">6. The Works and Days by Hesiod: This is a didactic poem that teaches about the principles of agriculture, justice, and
+                morality.</p>
+        
+                <p class="justify">7. The Histories by Herodotus: This work is considered the first true work of history, in which Herodotus records the
+                events of the Persian Wars.</p>
+        
+                <p class="justify">Overall, Greece has produced many important works of literature and philosophy that have had a significant impact on
+                Western culture and thought.</p>
+        
+            </div>
+        </body>
+
+        
+
+    </div>
+    <script>
+        let flag = document.getElementById('flag');
+        let olympus = document.getElementById('olympus');
+        let mountain = document.getElementById('mountain');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let hercules = document.getElementById('hercules');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            flag.style.left = value * 0.25 + 'px';
+            olympus.style.top = value * 1.05 + 'px';
+            mountain.style.top = value * 0.5 + 'px';
+            hercules.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            athens.style.top.left = value * 1.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>
